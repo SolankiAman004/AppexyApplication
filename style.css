@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+  .dot.active {
+    background-color: #3490dc; /* Tailwind's primary blue */
+  }
+

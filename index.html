@@ -9,189 +9,247 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.19/dist/full.min.css" rel="stylesheet" type="text/css" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
     <!-- Swiper CDN Styles -->
-
-    <script src="script.js"></script>
   </head>
   <body>
 
     <div class="container mx-auto">
         <!-- Wrapper for Navbar and First Section -->
         <div
-          class="bg-cover bg-center bg-no-repeat"
-          style="background-image: url('img/hero-bg.png');"
-        >
-          <!-- Navbar -->
-          <header
-            id="navbar"
-            class="text-gray-600 body-font sticky top-0 z-50 transition-all duration-300"
-          >
-            <div
-              class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center"
-            >
-              <img src="img/logo.png" alt="dark-logo" />
-              <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
-                <a class="hover:text-slate-800 mr-[18px] ml-[18px]">Home</a>
-                <a class="hover:text-slate-800 mr-[18px] ml-[18px]">Features</a>
-                <a class="hover:text-slate-800 mr-[18px] ml-[18px]">Screenshot</a>
-                <a class="hover:text-slate-800 mr-[18px] ml-[18px]">Testimonial</a>
-                <a class="hover:text-slate-800 mr-[18px] ml-[18px]">Pricing</a>
-                <a class="hover:text-slate-800 mr-[18px] ml-[18px]">Contact Us</a>
-               </nav>
-
-              <button
-                class="inline-flex items-center border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0 mr-3"
-              >
-                Login
-              </button>
-              <button
-                class="inline-flex items-center border-0 py-1.5 px-4 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0 bg-blue-100 text-blue-400"
-              >
-                Sign up
-              </button>
+  class="bg-cover bg-center bg-no-repeat"
+  style="background-image: url('img/hero-bg.png');"
+>
+  <!-- Navbar -->
+  <nav class="bg-white border-gray-200 py-2.5 dark:bg-gray-900 sticky top-0">
+    <div class="flex flex-wrap items-center justify-between max-w-screen-xl px-4 mx-auto">
+        <a href="#" class="flex items-center">
+            <img src="./img/logo.png" class="h-full" alt="Landwind Logo">
+            
+        </a>
+        <div class="flex items-center lg:order-2">
+            <div class="hidden mt-2 mr-4 sm:inline-block">
+                <span></span>
             </div>
-          </header>
-      
-          <!-- First Section -->
-          <section class="text-gray-600 body-font">
-            <div
-              class="container mx-auto flex px-5 py-20 md:flex-row flex-col items-center"
-            >
-              <div
-                class="lg:flex-grow md:w-1/2  flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center"
-              >
-              <i class="fa fa-rocket" aria-hidden="true"></i>
-
-                <h1
-                  class="title-font sm:text-4xl md:text-4xl lg:text-4xl mb-6 font-bold text-slate-800"
-                >
-                  Manage Your Activity <br class="hidden lg:inline-block" />With
-                  <span class="text-blue-500">Appexy </span>
-                </h1>
-                <p class="mb-6 py-4 leading-relaxed text-base">
-                  Maecenas tempus, tellus eget condimentum rhoncus quam semper<br />
-                  libero sit amet adipiscing sem neque sed ipsum nam quam nunc<br />
-                  blandit vel luctus pulvinar.
-                </p>
-                <div class="flex justify-center">
-                  <button
-                    class="inline-flex text-white bg-gradient-to-l from-blue-500 to-blue-700 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg"
-                  >
-                    Get Started Today
-                  </button>
-                  <button
-                    class="ml-4 inline-flex text-gray-700 bg-gray-100 border border-black py-2 px-6 focus:outline-none hover:bg-black hover:text-white rounded text-lg normal-case"
-                  >
-                    Download App
-                  </button>
-                </div>
-              </div>
-              <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
-                <img
-                  class="object-cover object-center rounded h-auto"
-                  alt="hero"
-                  src="./img/mobo.png"
-                  alt="Phone"
-                />
-              </div>
-            </div>
-          </section>
+            <div class="hidden lg:block">
+              <p class="mr-6">Login</p>
+          </div>
+          <a href="https://themesberg.com/product/tailwind-css/landing-page"
+              class="text-black border border-blue-400 bg-blue-200 hidden lg:block hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 sm:mr-2 lg:mr-0 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">
+              Sign Up
+          </a>
+          
+            <button data-collapse-toggle="mobile-menu-2" type="button"
+                class="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                aria-controls="mobile-menu-2" aria-expanded="true">
+                <span class="sr-only mt-2">Open main menu</span>
+                <!-- Font Awesome menu icon (fa-bars) -->
+                <i class="fas fa-bars w-6 h-6"></i>
+                <i class="fas fa-times hidden w-6 h-6"></i> <!-- Font Awesome close icon (fa-times) -->
+            </button>
+        </div>
+        <div class="items-center justify-between w-full lg:flex lg:w-auto lg:order-1" id="mobile-menu-2">
+            <ul class="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
+                <li>
+                    <a href="#"
+                        class="block py-2 pl-3 pr-4 font-medium text-white bg-blue-700 rounded lg:bg-transparent lg:text-blue-700 lg:p-0 dark:text-white"
+                        aria-current="page">Home</a>
+                </li>
+                <li>
+                    <a href="#"
+                        class="block py-2 pl-3 pr-4 font-medium text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-blue-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Features</a>
+                </li>
+                <li>
+                    <a href="#"
+                        class="block py-2 pl-3 pr-4 font-medium text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-blue-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Screenshot</a>
+                </li>
+                <li>
+                    <a href="#"
+                        class="block py-2 pl-3 pr-4 font-medium text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-blue-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Testimonial</a>
+                </li>
+                <li>
+                    <a href="#"
+                        class="block py-2 pl-3 pr-4 font-medium text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-blue-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Pricing</a>
+                </li>
+                <li>
+                    <a href="#"
+                        class="block py-2 pl-3 pr-4 font-medium text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-blue-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Contact Us</a>
+                </li>
+            </ul>
         </div>
     </div>
+</nav>
+
+
+
+
+<!-- Flowbite JS for Mobile Menu -->
+
+
+  <!-- First Section -->
+  <section class="text-gray-600 body-font">
+    <div
+      class="container mx-auto flex px-5 py-20 max-w-7xl md:flex-row flex-col items-center"
+    >
+      <!-- Left Content -->
+      <div
+        class="lg:flex-grow md:w-1/2 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center"
+      >
+        <i class="fa fa-rocket  bg-blue-100 p-8 rounded-full text-blue-700 text-4xl mb-4" aria-hidden="true"></i>
+
+        <h1
+          class="title-font sm:text-4xl text-3xl md:text-4xl lg:text-4xl mb-6 font-bold text-slate-800"
+        >
+          Manage Your Activity <br class="hidden lg:inline-block" />With
+          <span class="text-blue-700">Appexy</span>
+        </h1>
+        <p class="mb-6 py-4 leading-relaxed text-base text-gray-600">
+          Maecenas tempus, tellus eget condimentum rhoncus quam semper<br />
+          libero sit amet adipiscing sem neque sed ipsum nam quam nunc<br />
+          blandit vel luctus pulvinar.
+        </p>
+        <div class="flex justify-center">
+          <button
+            class="inline-flex text-white bg-gradient-to-l from-blue-500 to-blue-700 border-0 py-2 px-6 focus:outline-none hover:bg-blue-600 rounded text-lg"
+          >
+            Get Started Today
+          </button>
+          <button
+            class="ml-4 inline-flex text-gray-700 bg-gray-100 border border-black py-2 px-6 focus:outline-none hover:bg-black hover:text-white rounded text-lg normal-case"
+          >
+            Download App
+          </button>
+        </div>
+      </div>
+
+      <!-- Right Image -->
+      <div
+        class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 flex justify-center md:justify-end"
+      >
+        <img
+          class="object-cover object-center rounded h-auto"
+          alt="hero"
+          src="./img/mobo.png"
+        />
+      </div>
+    </div>
+  </section>
+</div>
+
+   
     <!-- section 2 started -->
-    <section class="text-gray-600 body-font">
-          <div class="container px-5 py-20 mx-auto">
-            <div class="text-center mb-20">
-                <h6 class="text-base mb-[8px]"> How it <span class="text-slate-800 font-bold">Work</span></h6>
-              <h2
-                class="sm:text-3xl text-2xl font-medium title-font text-slate-800 mt-[18px] mb-[8px]"
-              >
-              How does it work ?
-              </h2>
-              <p
-                class="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-gray-500s mb-[16px]"
-              >
-              Sed ut perspiciatis unde omnis iste natus error voluptatem<br> accusantium doloremque rem aperiam.
-              </p>
-              <div class="flex mt-6 justify-center">
-                <div
-                  class="w-16 h-1 rounded-full bg-indigo-500 inline-flex"
-                ></div>
-              </div>
-            </div>
-            <div class="flex  sm:-m-4 -mx-4 -mb-10 -mt-4 ">
-                <!-- First Div -->
-                <div class="p-4 md:w-1/4 flex flex-col text-center items-center">
-                  <div
-                    class="w-20 h-20 inline-flex items-center justify-center mb-5 flex-shrink-0"
-                    style="background-color: #dee7fc; border-radius: 28% 72% 50% 50% / 26% 20% 80% 74%;"
-                  >
-                    <img src="./img/menu-burger.png" alt="menu" class="h-[42px] w-[42px] text-slate-800">
-                  </div>
-                  <div class="flex-grow">
-                    <h5 class="text-slate-800 text-lg title-font font-semibold mb-[8px] text-[20px]">
-                      1. Intuitive visual editor
-                    </h5>
-                    <p class="leading-relaxed text-base">
-                      Nemo enim ipsam quia voluptas sit aspernatur ist dolores.
-                    </p>
-                  </div>
-                </div>
-              
-                <!-- Arrow after First Div -->
-                <div class="flex items-center">
-                  <img src="./img/arrow.png" alt="arrow" class="h-4 rotate-0">
-                </div>
-              
-                <!-- Second Div -->
-                <div class="p-4 md:w-1/4 flex flex-col text-center items-center">
-                  <div
-                    class="w-20 h-20 inline-flex items-center justify-center mb-5 flex-shrink-0"
-                    style="background-color: #ddfbf3; border-radius: 28% 72% 50% 50% / 26% 20% 80% 74%;"
-                  >
-                    <img src="./img/color-palette.png" alt="menu" class="h-[42px] w-[42px] text-slate-800">
-                  </div>
-                  <div class="flex-grow">
-                    <h5 class="text-slate-800 text-lg title-font font-semibold mb-[8px] text-[20px]">
-                      2. Huge design collection
-                    </h5>
-                    <p class="leading-relaxed text-base">
-                      Nemo enim ipsam quia voluptas sit aspernatur ist dolores.
-                    </p>
-                  </div>
-                </div>
-              
-                <!-- Arrow after Second Div -->
-                <div class="flex items-center">
-                    <img src="./img/arrow-bottom.png" alt="arrow" class="h-4 rotate-0">
-                  </div>
-              
-                <!-- Third Div -->
-                <div class="p-4 md:w-1/4 flex flex-col text-center items-center">
-                  <div
-                    class="w-20 h-20 inline-flex items-center justify-center mb-5 flex-shrink-0"
-                    style="background-color: #fff6dc; border-radius: 28% 72% 50% 50% / 26% 20% 80% 74%;"
-                  >
-                    <img src="./img/camadas.png" alt="menu" class="h-[42px] w-[42px] text-slate-800">
-                  </div>
-                  <div class="flex-grow">
-                    <h5 class="text-slate-800 text-lg title-font font-semibold mb-[8px] text-[20px]">
-                      3. One click installation
-                    </h5>
-                    <p class="leading-relaxed text-base">
-                      Nemo enim ipsam quia voluptas sit aspernatur ist dolores.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              
-            
+    <section class="text-gray-600 bg-gray-100 body-font">
+      <div class="container px-5 py-20 mx-auto max-w-7xl ">
+        <div class="text-center mb-20">
+          <h6 class="text-base mb-[8px]">
+            How it <span class="text-slate-800 font-bold">Works</span>
+          </h6>
+          <h2
+            class="sm:text-3xl text-2xl font-medium title-font text-slate-800 mt-[18px] mb-[8px]"
+          >
+            How does it work?
+          </h2>
+          <p
+            class="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-gray-500 mb-[16px]"
+          >
+            Sed ut perspiciatis unde omnis iste natus error voluptatem<br />
+            accusantium doloremque rem aperiam.
+          </p>
+          <div class="flex mt-6 justify-center">
+            <div class="w-16 h-1 rounded-full bg-indigo-500 inline-flex"></div>
           </div>
+        </div>
+        <div class="flex flex-wrap justify-center sm:-m-4 -mx-4 -mb-10 -mt-4">
+          <!-- First Step -->
+          <div class="p-4 md:w-1/4 flex flex-col text-center items-center">
+            <div
+              class="w-20 h-20 inline-flex items-center justify-center mb-5 flex-shrink-0"
+              style="background-color: #dee7fc; border-radius: 28% 72% 50% 50% / 26% 20% 80% 74%;"
+            >
+              <img
+                src="./img/menu-burger.png"
+                alt="menu"
+                class="h-[42px] w-[42px] text-slate-800"
+              />
+            </div>
+            <div class="flex-grow">
+              <h5 class="text-slate-800 text-lg title-font font-semibold mb-[8px]">
+                1. Intuitive visual editor
+              </h5>
+              <p class="leading-relaxed text-base text-gray-600">
+                Nemo enim ipsam quia voluptas sit aspernatur ist dolores.
+              </p>
+            </div>
+          </div>
+    
+          <!-- Arrow -->
+          <div class="flex items-center mx-4 hidden md:flex">
+            <img
+              src="./img/arrow.png"
+              alt="arrow"
+              class="h-5 transform rotate-0 text-gray-500"
+            />
+          </div>
+    
+          <!-- Second Step -->
+          <div class="p-4 md:w-1/4 flex flex-col text-center items-center">
+            <div
+              class="w-20 h-20 inline-flex items-center justify-center mb-5 flex-shrink-0"
+              style="background-color: #ddfbf3; border-radius: 28% 72% 50% 50% / 26% 20% 80% 74%;"
+            >
+              <img
+                src="./img/color-palette.png"
+                alt="palette"
+                class="h-[42px] w-[42px] text-slate-800"
+              />
+            </div>
+            <div class="flex-grow">
+              <h5 class="text-slate-800 text-lg title-font font-semibold mb-[8px]">
+                2. Huge design collection
+              </h5>
+              <p class="leading-relaxed text-base text-gray-600">
+                Nemo enim ipsam quia voluptas sit aspernatur ist dolores.
+              </p>
+            </div>
+          </div>
+    
+          <!-- Arrow -->
+          <div class="flex items-center mx-4 hidden md:flex">
+            <img
+              src="./img/arrow-bottom.png"
+              alt="arrow"
+              class="h-5 transform rotate-0 text-gray-500"
+            />
+          </div>
+    
+          <!-- Third Step -->
+          <div class="p-4 md:w-1/4 flex flex-col text-center items-center">
+            <div
+              class="w-20 h-20 inline-flex items-center justify-center mb-5 flex-shrink-0"
+              style="background-color: #fff6dc; border-radius: 28% 72% 50% 50% / 26% 20% 80% 74%;"
+            >
+              <img
+                src="./img/camadas.png"
+                alt="layers"
+                class="h-[42px] w-[42px] text-slate-800"
+              />
+            </div>
+            <div class="flex-grow">
+              <h5 class="text-slate-800 text-lg title-font font-semibold mb-[8px]">
+                3. One-click installation
+              </h5>
+              <p class="leading-relaxed text-base text-gray-600">
+                Nemo enim ipsam quia voluptas sit aspernatur ist dolores.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
+    
     <!-- section 2 ended -->
 
     <!-- section 3 started -->
     <section class="text-gray-600 body-font">
-      <div class="container px-5 py-20 mx-auto">
+      <div class="container px-5 py-20 mx-auto max-w-7xl ">
         <div class="text-center mb-20">
           <h6 class="text-base mb-[8px]">OUR <span class="text-slate-800 font-bold">FEATURES</span></h6>
           <h2 class="sm:text-3xl text-2xl font-semibold title-font text-slate-800 mb-[8px] mt-[18px]">
@@ -253,8 +311,8 @@
     <!-- section 3 ended -->
 
     <!-- section 4 started -->
-    <section class="text-gray-600 body-font bg-cover bg-center" style="background-image: url('./img/100001121.png');">
-      <div class="container px-5 py-20 mx-auto">
+    <section class="text-gray-600 bg-gray-100 body-font bg-cover bg-center" style="background-image: url('./img/100001121.png');">
+      <div class="container px-5 py-20 mx-auto max-w-7xl ">
         <div class="grid lg:grid-cols-2 grid-cols-1 gap-10"> 
           <!-- Text Section -->
           <div class="flex flex-col">
@@ -306,53 +364,61 @@
     </section>
 
     <!-- section 5 ended -->
-    <section class="text-gray-600 body-font relative  bg-fixed bg-center bg-cover" style="background-image: url('./img/100001122.jpg');">
-      <div class="relative px-5 py-32 mx-auto bg-gray-500 bg-opacity-70">
+    <section class="text-gray-600 body-font relative bg-fixed bg-center bg-cover" style="background-image: url('./img/100001122.jpg');">
+      <div class="relative px-5 py-32 mx-auto max-w-7xl  bg-black bg-opacity-70">
         <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 text-center">
           <!-- Global Brands -->
           <div class="border border-neutral-50 bg-white/30 backdrop-blur-lg rounded-lg p-6 flex items-center justify-center space-x-4 gap-6 shadow-xl h-36">
             <i class="fa fa-globe text-white text-3xl"></i>
             <div>
-              <h2 class="title-font font-medium sm:text-4xl text-[40x] mb-3 text-white">825</h2>
+              <h2 class="title-font font-medium sm:text-4xl text-[40px] mb-3 text-white">
+                <span class="counter" data-target="825">0</span>
+              </h2>
               <p class="leading-relaxed text-gray-300">Global Brands</p>
             </div>
           </div>
-      
+    
           <!-- Happy Clients -->
           <div class="border border-neutral-50 bg-white/30 backdrop-blur-lg rounded-lg p-6 flex items-center justify-center space-x-4 gap-6 shadow-xl h-36">
             <i class="fa fa-smile text-white text-3xl"></i>
             <div>
-              <h2 class="title-font font-medium sm:text-4xl text-[40x] mb-3 text-white">1800+</h2>
+              <h2 class="title-font font-medium sm:text-4xl text-[40px] mb-3 text-white">
+                <span class="counter" data-target="1800">0</span>
+              </h2>
               <p class="leading-relaxed text-gray-300">Happy Clients</p>
             </div>
           </div>
-      
+    
           <!-- Creative Ideas -->
           <div class="border border-neutral-50 bg-white/30 backdrop-blur-lg rounded-lg p-6 flex items-center justify-center space-x-4 gap-6 shadow-xl h-36">
             <i class="fa fa-lightbulb text-white text-3xl"></i>
             <div>
-              <h2 class="title-font font-medium sm:text-4xl text-[40x] mb-3 text-white">599+</h2>
+              <h2 class="title-font font-medium sm:text-4xl text-[40px] mb-3 text-white">
+                <span class="counter" data-target="599">0</span>
+              </h2>
               <p class="leading-relaxed text-gray-300">Creative Ideas</p>
             </div>
           </div>
-      
+    
           <!-- User Clients -->
           <div class="border border-neutral-50 bg-white/30 backdrop-blur-lg rounded-lg p-6 flex items-center justify-center space-x-4 gap-6 shadow-xl h-36">
             <i class="fa fa-users text-white text-3xl"></i>
             <div>
-              <h2 class="title-font font-medium sm:text-4xl text-[40x] mb-3  text-white">2000+</h2>
+              <h2 class="title-font font-medium sm:text-4xl text-[40px] mb-3 text-white">
+                <span class="counter" data-target="2000">0</span>
+              </h2>
               <p class="leading-relaxed text-gray-300">User Clients</p>
             </div>
           </div>
         </div>
       </div>
-      
     </section>
+    
     <!-- section 5 ended -->
   
     <!-- section 6 started -->
     <section class="text-gray-600 body-font">
-      <div class="container px-5 py-20 mx-auto flex-wrap">
+      <div class="container px-5 py-20 mx-auto max-w-7xl  flex-wrap">
         <div class="text-center mb-20">
           <p class="text-black text-medium">App <span class="font-bold">Screens</span></p>
           <h1 class="sm:text-3xl text-2xl font-bold title-font text-slate-800 mt-[18px] mb-2">
@@ -362,12 +428,49 @@
             Sed ut perspiciatis unde omnis iste natus error voluptatem accusantium <br> doloremque rem aperiam.
           </p>
         </div>
+
+        <div class=" w-full">
+  <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-4">
+    <!-- Card 1 -->
+    <div class="p-3 shadow-lg hover:shadow-lg transition-transform transform hover:-translate-y-3 bg-white rounded-lg">
+      <img src="./img/1.jpg" alt="pic" class="h-full w-full object-cover rounded-lg">
+    </div>
+
+    <!-- Card 2 -->
+    <div class="p-3 shadow-lg hover:shadow-lg transition-transform transform hover:-translate-y-3 bg-white rounded-lg">
+      <img src="./img/2.jpg" alt="pic" class="h-full w-full object-cover rounded-lg">
+    </div>
+
+    <!-- Card 3 -->
+    <div class="p-3 shadow-lg hover:shadow-lg transition-transform transform hover:-translate-y-3 bg-white rounded-lg">
+      <img src="./img/3.jpg" alt="pic" class="h-full w-full object-cover rounded-lg">
+    </div>
+
+    <!-- Card 4 -->
+    <div class="p-3 shadow-lg hover:shadow-lg transition-transform transform hover:-translate-y-3 bg-white rounded-lg">
+      <img src="./img/4.jpg" alt="pic" class="h-full w-full object-cover rounded-lg">
+    </div>
+
+    <!-- Card 5 -->
+    <div class="p-3 shadow-lg hover:shadow-lg transition-transform transform hover:-translate-y-3 bg-white rounded-lg">
+      <img src="./img/5.jpg" alt="pic" class="h-full w-full object-cover rounded-lg">
+    </div>
+
+    <!-- Card 6 -->
+    <div class="p-3 shadow-lg hover:shadow-lg transition-transform transform hover:-translate-y-3 bg-white rounded-lg">
+      <img src="./img/6.jpg" alt="pic" class="h-full w-full object-cover rounded-lg">
+    </div>
+  </div>
+        </div>
+
+        
+  
       </div>
     </section>
 
     <!-- section 7 started -->
-    <section class="text-gray-600 body-font bg-gray-100 py-[90px]">
-      <div class="container px-5 py-24 mx-auto">
+    <section class="text-gray-600 body-font bg-gray-100 ">
+      <div class="container px-5 py-24 mx-auto max-w-7xl ">
         <div class="text-center mb-12">
           <h6 class="text-base">OUR <span class="font-bold">TESTIMONIALS</span></h6>
           <h2 class="sm:text-3xl text-2xl font-medium title-font text-slate-800 mt-4 mb-2">
@@ -398,28 +501,32 @@
           </div>
           <!-- Add more testimonials here by duplicating the above structure -->
         </div>
-      </div>
 
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-4 mt-20">
           <div class="flex justify-center items-center">
-            <img src="/img/100000759.png" alt="Image 1" class="w-40 object-contain">
+            <img src="/img/100000759.png" alt="Image 1" class="w-40 object-contain hover:text-black">
           </div>
           <div class="flex justify-center items-center">
-            <img src="/img/100000792.png" alt="Image 2" class="w-40 object-contain">
+            <img src="/img/100000792.png" alt="Image 2" class="w-40 object-contain hover:text-black">
           </div>
           <div class="flex justify-center items-center">
-            <img src="/img/100000825.png" alt="Image 3" class="w-40 object-contain">
+            <img src="/img/100000825.png" alt="Image 3" class="w-40 object-contain hover:text-black">
           </div>
           <div class="flex justify-center items-center">
-            <img src="/img/100000858.png" alt="Image 4" class="w-40 object-contain">
+            <img src="/img/100000858.png" alt="Image 4" class="w-40 object-contain hover:text-black">
           </div>
         </div>
+       
+      </div>
     </section>
+
+      
+      
     <!-- section 7 ended -->
 
     <!-- section 8 started --> 
     <section class="text-gray-600 body-font bg-cover overflow-hidden">
-      <div class="container px-5 py-24 mx-auto">
+      <div class="container px-5 py-24 mx-auto max-w-7xl mb-12 ">
         <!-- Title and Description -->
         <div class="flex flex-col text-center w-full mb-12">
                     <h6 class="text-base mb-6">OUR <span class="font-bold">PRICING</span></h6>
@@ -429,274 +536,238 @@
             Sed ut perspiciatis unde omnis iste natus error voluptatem accusantium <br> doloremque rem aperiam.
           </p>
         </div>
-  
-        <!-- Toggle Buttons -->
 
-  <div class="flex justify-center mb-8">
-    <div class="relative bg-gray-200 p-2 rounded-2xl flex gap-2">
-      <button id="monthly-btn" type="button" class="w-1/2 py-2 px-6 text-sm font-medium rounded-xl bg-blue-500 text-white">
-        Monthly
-      </button>
-      <button id="yearly-btn" type="button" class="w-1/2 py-2 px-6 text-sm font-medium rounded-xl text-blue-500 bg-gray-100">
-        Yearly
-      </button>
-    </div>
-  </div>
-
-  <div id="monthly" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mx-auto max-w-screen-lg">
-    <!-- Free Plan -->
-    <div class="rounded-lg shadow-md divide-y divide-slate-200 w-80 mx-auto">
-      <div class="p-8 bg-white">
-        <div class="bg-gray-50 p-4">
-          <h2 class="text-xl font-semibold text-center">Free</h2>
-          <p class="mt-4 text-center">
-            <span class="text-4xl font-bold text-blue-500">$0.00</span>
-            <span class="text-base text-gray-500">/Month</span>
-          </p>
+        <div class="flex justify-center mb-8">
+          <div class="relative bg-gray-200 p-2 rounded-2xl flex gap-2">
+            <button id="monthly-btn" type="button" class="w-1/2 py-2 px-6 text-sm font-medium rounded-xl bg-blue-700 text-white">
+              Monthly
+            </button>
+            <button id="yearly-btn" type="button" class="w-1/2 py-2 px-6 text-sm font-medium rounded-xl text-blue-700 bg-gray-100">
+              Yearly
+            </button>
+          </div>
         </div>
-      </div>
-      <div class="p-6">
-        <ul class="space-y-3">
-          <li class="flex items-center text-slate-700">
-            <i class="fa fa-check text-black mr-2"></i> 3 Projects
-          </li>
-          <li class="flex items-center text-slate-700">
-            <i class="fa fa-check text-black mr-2"></i> 580GB Storage
-          </li>
-          <li class="flex items-center text-slate-700">
-            <i class="fa fa-check text-black mr-2"></i> Unlimited Contacts
-          </li>
-          <li class="flex items-center text-slate-700">
-            <i class="fa fa-check text-black mr-2"></i> 5 Domains
-          </li>
-          <li class="flex items-center text-slate-700">
-            <i class="fa fa-check text-black mr-2"></i> Free Support 24/7
-          </li>
-        </ul>
-        <a href="/sign-up" class="block w-full mt-6 text-white text-center py-2 rounded-md bg-gradient-to-r from-blue-500 to-indigo-500 hover:from-blue-600 hover:to-indigo-600">
-          Join for Free
-        </a>
-      </div>
-    </div>
-  
-    <!-- Standard Plan -->
-    <div class="rounded-lg shadow-lg divide-y divide-slate-200 w-80 mx-auto">
-      <div class="p-8 bg-white">
-        <div class="bg-gray-50 p-4">
-          <h2 class="text-xl font-semibold text-center">Standard</h2>
-          <p class="mt-4 text-center">
-            <span class="text-4xl font-bold text-blue-500">$29.00</span>
-            <span class="text-base text-gray-500">/Month</span>
-          </p>
-        </div>
-      </div>
-      <div class="p-6">
-        <ul class="space-y-3">
-          <li class="flex items-center text-slate-700">
-            <i class="fa fa-check text-black mr-2"></i> 10 Projects
-          </li>
-          <li class="flex items-center text-slate-700">
-            <i class="fa fa-check text-black mr-2"></i> 1TB Storage
-          </li>
-          <li class="flex items-center text-slate-700">
-            <i class="fa fa-check text-black mr-2"></i> Unlimited Contacts
-          </li>
-          <li class="flex items-center text-slate-700">
-            <i class="fa fa-check text-black mr-2"></i> 12 Domains
-          </li>
-          <li class="flex items-center text-slate-700">
-            <i class="fa fa-check text-black mr-2"></i> Free Support 24/7
-          </li>
-        </ul>
-        <a href="/sign-up" class="block w-full mt-6 text-white text-center py-2 rounded-md bg-gradient-to-r from-blue-500 to-indigo-500 hover:from-blue-600 hover:to-indigo-600">
-          Join as Standard
-        </a>
-      </div>
-    </div>
-  
-    <!-- Enterprise Plan -->
-    <div class="rounded-lg shadow-lg divide-y divide-slate-200 w-80 mx-auto">
-      <div class="p-8 bg-white">
-        <div class="bg-gray-50 p-4">
-          <h2 class="text-xl font-semibold text-center">Enterprise</h2>
-          <p class="mt-4 text-center">
-            <span class="text-4xl font-bold text-blue-500">$49.00</span>
-            <span class="text-base text-gray-500">/Month</span>
-          </p>
-        </div>
-      </div>
-      <div class="p-6">
-        <ul class="space-y-3">
-          <li class="flex items-center text-slate-700">
-            <i class="fa fa-check text-black mr-2"></i> 20 Projects
-          </li>
-          <li class="flex items-center text-slate-700">
-            <i class="fa fa-check text-black mr-2"></i> 2.5TB Storage
-          </li>
-          <li class="flex items-center text-slate-700">
-            <i class="fa fa-check text-black mr-2"></i> Unlimited Contacts
-          </li>
-          <li class="flex items-center text-slate-700">
-            <i class="fa fa-check text-black mr-2"></i> 18 Domains
-          </li>
-          <li class="flex items-center text-slate-700">
-            <i class="fa fa-check text-black mr-2"></i> Free Support 24/7
-          </li>
-        </ul>
-        <a href="/sign-up" class="block w-full mt-6 text-white text-center py-2 rounded-md bg-gradient-to-r from-blue-500 to-indigo-500 hover:from-blue-600 hover:to-indigo-600">
-          Join as Enterprise
-        </a>
-      </div>
-    </div>
-  </div>
-
-  <div id="yearly" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mx-auto max-w-screen-lg hidden">
-    <div class="rounded-lg shadow-md divide-y divide-slate-200 w-80 mx-auto">
-      <div class="p-8 bg-white">
-        <div class="bg-gray-50 p-4">
-          <h2 class="text-xl font-semibold text-center">Free</h2>
-          <p class="mt-4 text-center">
-            <span class="text-4xl font-bold text-blue-500">$39.00</span>
-            <span class="text-base text-gray-500">/Month</span>
-          </p>
-        </div>
-      </div>
-      <div class="p-6">
-        <ul class="space-y-3">
-          <li class="flex items-center text-slate-700">
-            <i class="fa fa-check text-black mr-2"></i> 15 Projects
-          </li>
-          <li class="flex items-center text-slate-700">
-            <i class="fa fa-check text-black mr-2"></i>3TB Storage
-          </li>
-          <li class="flex items-center text-slate-700">
-            <i class="fa fa-check text-black mr-2"></i> Unlimited Contacts
-          </li>
-          <li class="flex items-center text-slate-700">
-            <i class="fa fa-check text-black mr-2"></i> 20 Domains
-          </li>
-          <li class="flex items-center text-slate-700">
-            <i class="fa fa-check text-black mr-2"></i> Free Support 24/7
-          </li>
-        </ul>
-        <a href="/sign-up" class="block w-full mt-6 text-white text-center py-2 rounded-md bg-gradient-to-r from-blue-500 to-indigo-500 hover:from-blue-600 hover:to-indigo-600">
-          Join for Free
-        </a>
-      </div>
-    </div>
-  
-    <!-- Standard Plan -->
-    <div class="rounded-lg shadow-lg divide-y divide-slate-200 w-80 mx-auto">
-      <div class="p-8 bg-white">
-        <div class="bg-gray-50 p-4">
-          <h2 class="text-xl font-semibold text-center">Standard</h2>
-          <p class="mt-4 text-center">
-            <span class="text-4xl font-bold text-blue-500">$79.00</span>
-            <span class="text-base text-gray-500">/Month</span>
-          </p>
-        </div>
-      </div>
-      <div class="p-6">
-        <ul class="space-y-3">
-          <li class="flex items-center text-slate-700">
-            <i class="fa fa-check text-black mr-2"></i> 32 Projects
-          </li>
-          <li class="flex items-center text-slate-700">
-            <i class="fa fa-check text-black mr-2"></i> 35TB Storage
-          </li>
-          <li class="flex items-center text-slate-700">
-            <i class="fa fa-check text-black mr-2"></i> Unlimited Contacts
-          </li>
-          <li class="flex items-center text-slate-700">
-            <i class="fa fa-check text-black mr-2"></i> 25 Domains
-          </li>
-          <li class="flex items-center text-slate-700">
-            <i class="fa fa-check text-black mr-2"></i> Free Support 24/7
-          </li>
-        </ul>
-        <a href="/sign-up" class="block w-full mt-6 text-white text-center py-2 rounded-md bg-gradient-to-r from-blue-500 to-indigo-500 hover:from-blue-600 hover:to-indigo-600">
-          Join as Standard
-        </a>
+      
+        <div id="monthly" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mx-auto max-w-screen-lg">
+          <!-- Free Plan -->
+          <div class="rounded-lg shadow-md divide-y divide-slate-200 w-80 mx-auto">
+            <div class="p-8 bg-white">
+              <div class="bg-gray-50 p-4">
+                <h2 class="text-xl font-semibold text-center">Free</h2>
+                <p class="mt-4 text-center">
+                  <span class="text-4xl font-bold text-blue-700">$0.00</span>
+                  <span class="text-base text-gray-500">/Month</span>
+                </p>
+              </div>
+            </div>
+            <div class="p-6">
+              <ul class="space-y-3">
+                <li class="flex items-center text-slate-700">
+                  <i class="fa fa-check text-black mr-2"></i> 3 Projects
+                </li>
+                <li class="flex items-center text-slate-700">
+                  <i class="fa fa-check text-black mr-2"></i> 580GB Storage
+                </li>
+                <li class="flex items-center text-slate-700">
+                  <i class="fa fa-check text-black mr-2"></i> Unlimited Contacts
+                </li>
+                <li class="flex items-center text-slate-700">
+                  <i class="fa fa-check text-black mr-2"></i> 5 Domains
+                </li>
+                <li class="flex items-center text-slate-700">
+                  <i class="fa fa-check text-black mr-2"></i> Free Support 24/7
+                </li>
+              </ul>
+              <a href="/sign-up" class="block w-full mt-6 text-white text-center py-2 rounded-md bg-gradient-to-r from-blue-500 to-indigo-500 hover:from-blue-600 hover:to-indigo-600">
+                Join for Free
+              </a>
+            </div>
+          </div>
         
-      </div>
-    </div>
-  
-    <!-- Enterprise Plan -->
-    <div class="rounded-lg shadow-lg divide-y divide-slate-200 w-80 mx-auto">
-      <div class="p-8 bg-white">
-        <div class="bg-gray-50 p-4">
-          <h2 class="text-xl font-semibold text-center">Enterprise</h2>
-          <p class="mt-4 text-center">
-            <span class="text-4xl font-bold text-blue-500">$99.00</span>
-            <span class="text-base text-gray-500">/Month</span>
-          </p>
+          <!-- Standard Plan -->
+          <div class="rounded-lg shadow-lg divide-y divide-slate-200 w-80 mx-auto">
+            <div class="p-8 bg-white">
+              <div class="bg-gray-50 p-4">
+                <h2 class="text-xl font-semibold text-center">Standard</h2>
+                <p class="mt-4 text-center">
+                  <span class="text-4xl font-bold text-blue-700">$29.00</span>
+                  <span class="text-base text-gray-500">/Month</span>
+                </p>
+              </div>
+            </div>
+            <div class="p-6">
+              <ul class="space-y-3">
+                <li class="flex items-center text-slate-700">
+                  <i class="fa fa-check text-black mr-2"></i> 10 Projects
+                </li>
+                <li class="flex items-center text-slate-700">
+                  <i class="fa fa-check text-black mr-2"></i> 1TB Storage
+                </li>
+                <li class="flex items-center text-slate-700">
+                  <i class="fa fa-check text-black mr-2"></i> Unlimited Contacts
+                </li>
+                <li class="flex items-center text-slate-700">
+                  <i class="fa fa-check text-black mr-2"></i> 12 Domains
+                </li>
+                <li class="flex items-center text-slate-700">
+                  <i class="fa fa-check text-black mr-2"></i> Free Support 24/7
+                </li>
+              </ul>
+              <a href="/sign-up" class="block w-full mt-6 text-white text-center py-2 rounded-md bg-gradient-to-r from-blue-500 to-indigo-500 hover:from-blue-600 hover:to-indigo-600">
+                Join as Standard
+              </a>
+            </div>
+          </div>
+        
+          <!-- Enterprise Plan -->
+          <div class="rounded-lg shadow-lg divide-y divide-slate-200 w-80 mx-auto">
+            <div class="p-8 bg-white">
+              <div class="bg-gray-50 p-4">
+                <h2 class="text-xl font-semibold text-center">Enterprise</h2>
+                <p class="mt-4 text-center">
+                  <span class="text-4xl font-bold text-blue-700">$49.00</span>
+                  <span class="text-base text-gray-500">/Month</span>
+                </p>
+              </div>
+            </div>
+            <div class="p-6">
+              <ul class="space-y-3">
+                <li class="flex items-center text-slate-700">
+                  <i class="fa fa-check text-black mr-2"></i> 20 Projects
+                </li>
+                <li class="flex items-center text-slate-700">
+                  <i class="fa fa-check text-black mr-2"></i> 2.5TB Storage
+                </li>
+                <li class="flex items-center text-slate-700">
+                  <i class="fa fa-check text-black mr-2"></i> Unlimited Contacts
+                </li>
+                <li class="flex items-center text-slate-700">
+                  <i class="fa fa-check text-black mr-2"></i> 18 Domains
+                </li>
+                <li class="flex items-center text-slate-700">
+                  <i class="fa fa-check text-black mr-2"></i> Free Support 24/7
+                </li>
+              </ul>
+              <a href="/sign-up" class="block w-full mt-6 text-white text-center py-2 rounded-md bg-gradient-to-r from-blue-500 to-indigo-500 hover:from-blue-600 hover:to-indigo-600">
+                Join as Enterprise
+              </a>
+            </div>
+          </div>
         </div>
-      </div>
-      <div class="p-6">
-        <ul class="space-y-3">
-          <li class="flex items-center text-slate-700">
-            <i class="fa fa-check text-black mr-2"></i> 50 Projects
-          </li>
-          <li class="flex items-center text-slate-700">
-            <i class="fa fa-check text-black mr-2"></i> 10 TB Storage
-          </li>
-          <li class="flex items-center text-slate-700">
-            <i class="fa fa-check text-black mr-2"></i> Unlimited Contacts
-          </li>
-          <li class="flex items-center text-slate-700">
-            <i class="fa fa-check text-black mr-2"></i> 55 Domains
-          </li>
-          <li class="flex items-center text-slate-700">
-            <i class="fa fa-check text-black mr-2"></i> Free Support 24/7
-          </li>
-        </ul>
-        <a href="/sign-up" class="block w-full mt-6 text-white text-center py-2 rounded-md bg-gradient-to-r from-blue-500 to-indigo-500 hover:from-blue-600 hover:to-indigo-600">
-          Join as Enterprise
-        </a>
-       
-      </div>
-    </div>
-  </div>
-  
-
-</div>
-
-
-<script>
-  const monthlyBtn = document.getElementById('monthly-btn');
-  const yearlyBtn = document.getElementById('yearly-btn');
-  const monthlySection = document.getElementById('monthly');
-  const yearlySection = document.getElementById('yearly');
-
-  monthlyBtn.addEventListener('click', () => {
-    monthlyBtn.classList.add('bg-blue-500', 'text-white');
-    monthlyBtn.classList.remove('bg-gray-100', 'text-blue-500');
-    yearlyBtn.classList.remove('bg-blue-500', 'text-white');
-    yearlyBtn.classList.add('bg-gray-100', 'text-blue-500');
-    monthlySection.classList.remove('hidden');
-    yearlySection.classList.add('hidden');
-  });
-
-  yearlyBtn.addEventListener('click', () => {
-    yearlyBtn.classList.add('bg-blue-500', 'text-white');
-    yearlyBtn.classList.remove('bg-gray-100', 'text-blue-500');
-    monthlyBtn.classList.remove('bg-blue-500', 'text-white');
-    monthlyBtn.classList.add('bg-gray-100', 'text-blue-500');
-    yearlySection.classList.remove('hidden');
-    monthlySection.classList.add('hidden');
-  });
-</script>
-
+      
+        <div id="yearly" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mx-auto max-w-screen-lg hidden">
+          <div class="rounded-lg shadow-md divide-y divide-slate-200 w-80 mx-auto">
+            <div class="p-8 bg-white">
+              <div class="bg-gray-50 p-4">
+                <h2 class="text-xl font-semibold text-center">Free</h2>
+                <p class="mt-4 text-center">
+                  <span class="text-4xl font-bold text-blue-700">$39.00</span>
+                  <span class="text-base text-gray-500">/Month</span>
+                </p>
+              </div>
+            </div>
+            <div class="p-6">
+              <ul class="space-y-3">
+                <li class="flex items-center text-slate-700">
+                  <i class="fa fa-check text-black mr-2"></i> 15 Projects
+                </li>
+                <li class="flex items-center text-slate-700">
+                  <i class="fa fa-check text-black mr-2"></i>3TB Storage
+                </li>
+                <li class="flex items-center text-slate-700">
+                  <i class="fa fa-check text-black mr-2"></i> Unlimited Contacts
+                </li>
+                <li class="flex items-center text-slate-700">
+                  <i class="fa fa-check text-black mr-2"></i> 20 Domains
+                </li>
+                <li class="flex items-center text-slate-700">
+                  <i class="fa fa-check text-black mr-2"></i> Free Support 24/7
+                </li>
+              </ul>
+              <a href="/sign-up" class="block w-full mt-6 text-white text-center py-2 rounded-md bg-gradient-to-r from-blue-500 to-indigo-500 hover:from-blue-600 hover:to-indigo-600">
+                Join for Free
+              </a>
+            </div>
+          </div>
         
+          <!-- Standard Plan -->
+          <div class="rounded-lg shadow-lg divide-y divide-slate-200 w-80 mx-auto">
+            <div class="p-8 bg-white">
+              <div class="bg-gray-50 p-4">
+                <h2 class="text-xl font-semibold text-center">Standard</h2>
+                <p class="mt-4 text-center">
+                  <span class="text-4xl font-bold text-blue-700">$79.00</span>
+                  <span class="text-base text-gray-500">/Month</span>
+                </p>
+              </div>
+            </div>
+            <div class="p-6">
+              <ul class="space-y-3">
+                <li class="flex items-center text-slate-700">
+                  <i class="fa fa-check text-black mr-2"></i> 32 Projects
+                </li>
+                <li class="flex items-center text-slate-700">
+                  <i class="fa fa-check text-black mr-2"></i> 35TB Storage
+                </li>
+                <li class="flex items-center text-slate-700">
+                  <i class="fa fa-check text-black mr-2"></i> Unlimited Contacts
+                </li>
+                <li class="flex items-center text-slate-700">
+                  <i class="fa fa-check text-black mr-2"></i> 25 Domains
+                </li>
+                <li class="flex items-center text-slate-700">
+                  <i class="fa fa-check text-black mr-2"></i> Free Support 24/7
+                </li>
+              </ul>
+              <a href="/sign-up" class="block w-full mt-6 text-white text-center py-2 rounded-md bg-gradient-to-r from-blue-500 to-indigo-500 hover:from-blue-600 hover:to-indigo-600">
+                Join as Standard
+              </a>
+              
+            </div>
+          </div>
         
-
-        
-      </div>
+          <!-- Enterprise Plan -->
+          <div class="rounded-lg shadow-lg divide-y divide-slate-200 w-80 mx-auto">
+            <div class="p-8 bg-white">
+              <div class="bg-gray-50 p-4">
+                <h2 class="text-xl font-semibold text-center">Enterprise</h2>
+                <p class="mt-4 text-center">
+                  <span class="text-4xl font-bold text-blue-700">$99.00</span>
+                  <span class="text-base text-gray-500">/Month</span>
+                </p>
+              </div>
+            </div>
+            <div class="p-6">
+              <ul class="space-y-3">
+                <li class="flex items-center text-slate-700">
+                  <i class="fa fa-check text-black mr-2"></i> 50 Projects
+                </li>
+                <li class="flex items-center text-slate-700">
+                  <i class="fa fa-check text-black mr-2"></i> 10 TB Storage
+                </li>
+                <li class="flex items-center text-slate-700">
+                  <i class="fa fa-check text-black mr-2"></i> Unlimited Contacts
+                </li>
+                <li class="flex items-center text-slate-700">
+                  <i class="fa fa-check text-black mr-2"></i> 55 Domains
+                </li>
+                <li class="flex items-center text-slate-700">
+                  <i class="fa fa-check text-black mr-2"></i> Free Support 24/7
+                </li>
+              </ul>
+              <a href="/sign-up" class="block w-full mt-6 text-white text-center py-2 rounded-md bg-gradient-to-r from-blue-500 to-indigo-500 hover:from-blue-600 hover:to-indigo-600">
+                Join as Enterprise
+              </a>
+             
+            </div>
+          </div>
+        </div>
+      </div> 
     </section>
     <!-- section 8 ended -->
 
     <section class="text-gray-600  bg-gray-100 body-font">
-      <div class="container px-5 py-24 mx-auto">
+      <div class="container px-5 py-24 mx-auto max-w-7xl ">
         <div class="flex flex-col text-center w-full mb-12">
           <h6 class="text-base mb-6">OUR <span class="font-bold">FAQS</span></h6>
           <h1 class="sm:text-4xl text-3xl font-medium title-font mb-4 text-slate-800">Frequently Asked Questions</h1>
@@ -705,7 +776,7 @@
           </p>
         </div>
         <div class="flex flex-wrap lg:flex-nowrap items-center gap-8">
-          <div class="grid grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2">
+          <div class="grid grid-cols-12 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2">
             <div class="w-full ">
               <img src="./img/faq.png" alt="FAQ Image" class="mx-auto items-center justify-center ">
             </div>
@@ -765,9 +836,8 @@
       </div>
     </section>
     
-
     <section class="text-gray-600 body-font">
-      <div class="container px-5 py-24">
+      <div class="container px-5 py-24 mx-auto max-w-7xl ">
         <div class="flex flex-col text-center w-full mb-12">
           <h1 class="sm:text-4xl text-[48px] font-bold title-font mb-4 text-slate-800">Available For Your Smartphone.</h1>
           <p class="lg:w-2/3 mx-auto leading-relaxed text-base">
@@ -775,15 +845,14 @@
           </p>
         </div>
         <div class="flex lg:w-2/3 w-full flex-wrap justify-center items-center mx-auto px-8 sm:space-x-4 sm:space-y-0 space-y-4 sm:px-0 gap-3">
-          <img src="/img/100000924.png" alt="logo" class="h-auto max-w-xs">
-          <img src="/img/100000957.png" alt="logo" class="h-auto max-w-xs">
+          <a href="https://www.apple.com/in/store?afid=p238%7Csfo291LJq-dc_mtid_187079nc38483_pcrid_719882393407_pgrid_109516736059_pntwk_g_pchan__pexid__ptid_kwd-12522920_&cid=aos-IN-kwgo-brand--slid---product-"><img src="/img/100000924.png" alt="logo" class="h-auto max-w-xs"></a>
+          <a href="https://play.google.com/store/games?hl=en"><img src="/img/100000957.png" alt="logo" class="h-auto max-w-xs"></a>
         </div>
       </div>
     </section>
-    
-
+       
     <section class="text-gray-600  bg-gray-100 body-font">
-      <div class="container px-5 py-24 mx-auto">
+      <div class="container px-5 py-24 mx-auto max-w-7xl ">
         <div class="flex flex-col text-center w-full mb-12">
           <h6 class="text-base mb-6">OUR <span class="font-bold">CONTACT US</span></h6>
           <h1 class="sm:text-4xl text-3xl font-medium title-font mb-4 text-slate-800">Get in Touch
@@ -893,7 +962,7 @@
 
      <footer class="bg-gray-950 text-gray-300 body-font w-full bg-opacity-80 bg-contain  bg-center bg-no-repeat" style="background-image: url('./img/100001123.png');">
 
-      <div class="container mx-auto px-6 pt-[80px] pb-[30px]">
+      <div class="container mx-auto px-6 pt-[80px] pb-[30px] max-w-7xl ">
         <!-- Grid -->
         <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 md:grid-cols-4 gap-8">
           <!-- Logo and Contact Info -->
@@ -915,7 +984,7 @@
                 href="https://www.facebook.com" 
                 target="_blank" 
                 rel="noopener noreferrer" 
-                class="w-9 h-9 rounded-full bg-gray-700 flex justify-center items-center hover:text-blue-500 hover:bg-indigo-600"
+                class="w-9 h-9 rounded-full bg-gray-700 flex justify-center items-center hover:text-blue-700 hover:bg-indigo-600"
               >
                 <i class="fab fa-facebook-f text-white"></i>
               </a>
@@ -931,7 +1000,7 @@
                 href="https://www.linkedin.com" 
                 target="_blank" 
                 rel="noopener noreferrer" 
-                class="w-9 h-9 rounded-full bg-gray-700 flex justify-center items-center hover:text-blue-500 hover:bg-indigo-600"
+                class="w-9 h-9 rounded-full bg-gray-700 flex justify-center items-center hover:text-blue-700 hover:bg-indigo-600"
               >
                 <i class="fab fa-linkedin-in text-white"></i>
               </a>
@@ -939,7 +1008,7 @@
                 href="https://www.skype.com" 
                 target="_blank" 
                 rel="noopener noreferrer" 
-                class="w-9 h-9 rounded-full bg-gray-700 flex justify-center items-center hover:text-blue-500 hover:bg-sky-700"
+                class="w-9 h-9 rounded-full bg-gray-700 flex justify-center items-center hover:text-blue-700 hover:bg-sky-700"
               >
                 <i class="fab fa-skype text-white"></i>
               </a>
@@ -950,7 +1019,7 @@
           <div>
             <h4 class="text-[20px] font-medium mb-3 text-white">About Us</h4>
             <ul class="space-y-3 text-sm">
-              <li class="hover:list-disc hover:ml-3 hover:text-blue-500">
+              <li class="hover:list-disc hover:ml-3 hover:text-blue-700">
                 <a 
                   href="#" 
                   class="inline-block transform transition-all duration-500 hover:translate-x-1 hover:text-white text-base"
@@ -958,7 +1027,7 @@
                   Support Center
                 </a>
               </li>
-              <li class="hover:list-disc hover:ml-3 hover:text-blue-500">
+              <li class="hover:list-disc hover:ml-3 hover:text-blue-700">
                 <a 
                   href="#" 
                   class="inline-block transform transition-all duration-500 hover:translate-x-1 hover:text-white text-base"
@@ -966,7 +1035,7 @@
                   Customer Support
                 </a>
               </li>
-              <li class="hover:list-disc hover:ml-3 hover:text-blue-500">
+              <li class="hover:list-disc hover:ml-3 hover:text-blue-700">
                 <a 
                   href="#" 
                   class="inline-block transform transition-all duration-500 hover:translate-x-1 hover:text-white text-base"
@@ -974,7 +1043,7 @@
                   About Us
                 </a>
               </li>
-              <li class="hover:list-disc hover:ml-3 hover:text-blue-500">
+              <li class="hover:list-disc hover:ml-3 hover:text-blue-700">
                 <a 
                   href="#" 
                   class="inline-block transform transition-all duration-500 hover:translate-x-1 hover:text-white text-base"
@@ -982,7 +1051,7 @@
                   Copyright
                 </a>
               </li>
-              <li class="hover:list-disc hover:ml-5 hover:text-blue-500">
+              <li class="hover:list-disc hover:ml-5 hover:text-blue-700">
                 <a 
                   href="#" 
                   class="inline-block transform transition-all duration-500 hover:translate-x-1 hover:text-white text-base"
@@ -998,11 +1067,11 @@
           <div>
             <h4 class="text-[20px] font-medium mb-3">Our Information</h4>
             <ul class="space-y-3 text-sm">
-              <li class="hover:list-disc hover:ml-3 hover:text-blue-500"><a href="#" class="inline-block transform transition-all duration-500 hover:translate-x-1 hover:text-white text-base">Return Policy</a></li>
-              <li class="hover:list-disc hover:ml-3 hover:text-blue-500"><a href="#" class="inline-block transform transition-all duration-500 hover:translate-x-1 hover:text-white text-base">Privacy Policy</a></li>
-              <li class="hover:list-disc hover:ml-3 hover:text-blue-500"><a href="#" class="inline-block transform transition-all duration-500 hover:translate-x-1 hover:text-white text-base">Terms & Conditions</a></li>
-              <li class="hover:list-disc hover:ml-3 hover:text-blue-500"><a href="#" class="inline-block transform transition-all duration-500 hover:translate-x-1 hover:text-white text-base">Site Map</a></li>
-              <li class="hover:list-disc hover:ml-3 hover:text-blue-500"><a href="#" class="inline-block transform transition-all duration-500 hover:translate-x-1 hover:text-white text-base">Store Hours</a></li>
+              <li class="hover:list-disc hover:ml-3 hover:text-blue-700"><a href="#" class="inline-block transform transition-all duration-500 hover:translate-x-1 hover:text-white text-base">Return Policy</a></li>
+              <li class="hover:list-disc hover:ml-3 hover:text-blue-700"><a href="#" class="inline-block transform transition-all duration-500 hover:translate-x-1 hover:text-white text-base">Privacy Policy</a></li>
+              <li class="hover:list-disc hover:ml-3 hover:text-blue-700"><a href="#" class="inline-block transform transition-all duration-500 hover:translate-x-1 hover:text-white text-base">Terms & Conditions</a></li>
+              <li class="hover:list-disc hover:ml-3 hover:text-blue-700"><a href="#" class="inline-block transform transition-all duration-500 hover:translate-x-1 hover:text-white text-base">Site Map</a></li>
+              <li class="hover:list-disc hover:ml-3 hover:text-blue-700"><a href="#" class="inline-block transform transition-all duration-500 hover:translate-x-1 hover:text-white text-base">Store Hours</a></li>
             </ul>
           </div>
     
@@ -1010,11 +1079,11 @@
           <div>
             <h4 class="text-[20px] font-medium mb-3">My Account</h4>
             <ul class="space-y-3 text-sm">
-              <li class="hover:list-disc hover:ml-3 hover:text-blue-500"><a href="#" class="inline-block transform transition-all duration-500 hover:translate-x-1 hover:text-white text-base">Press Inquiries</a></li>
-              <li class="hover:list-disc hover:ml-3 hover:text-blue-500"><a href="#" class="inline-block transform transition-all duration-500 hover:translate-x-1 hover:text-white text-base">Social Media Directories</a></li>
-              <li class="hover:list-disc hover:ml-3 hover:text-blue-500"><a href="#" class="inline-block transform transition-all duration-500 hover:translate-x-1 hover:text-white text-base">Images & B-roll</a></li>
-              <li class="hover:list-disc hover:ml-3 hover:text-blue-500"><a href="#" class="inline-block transform transition-all duration-500 hover:translate-x-1 hover:text-white text-base">Permissions</a></li>
-              <li class="hover:list-disc hover:ml-3 hover:text-blue-500"><a href="#" class="inline-block transform transition-all duration-500 hover:translate-x-1 hover:text-white text-base">Speaker Requests</a></li>
+              <li class="hover:list-disc hover:ml-3 hover:text-blue-700"><a href="#" class="inline-block transform transition-all duration-500 hover:translate-x-1 hover:text-white text-base">Press Inquiries</a></li>
+              <li class="hover:list-disc hover:ml-3 hover:text-blue-700"><a href="#" class="inline-block transform transition-all duration-500 hover:translate-x-1 hover:text-white text-base">Social Media Directories</a></li>
+              <li class="hover:list-disc hover:ml-3 hover:text-blue-700"><a href="#" class="inline-block transform transition-all duration-500 hover:translate-x-1 hover:text-white text-base">Images & B-roll</a></li>
+              <li class="hover:list-disc hover:ml-3 hover:text-blue-700"><a href="#" class="inline-block transform transition-all duration-500 hover:translate-x-1 hover:text-white text-base">Permissions</a></li>
+              <li class="hover:list-disc hover:ml-3 hover:text-blue-700"><a href="#" class="inline-block transform transition-all duration-500 hover:translate-x-1 hover:text-white text-base">Speaker Requests</a></li>
             </ul>
           </div>
     
@@ -1022,10 +1091,10 @@
           <div>
             <h4 class="text-[20px] font-medium mb-3">Policy</h4>
             <ul class="space-y-3 text-sm">
-              <li class="hover:list-disc hover:ml-3 hover:text-blue-500"><a href="#" class="inline-block transform transition-all duration-500 hover:translate-x-1 hover:text-white text-base">Application Security</a></li>
-              <li class="hover:list-disc hover:ml-3 hover:text-blue-500"><a href="#" class="inline-block transform transition-all duration-500 hover:translate-x-1 hover:text-white text-base">Software Principles</a></li>
-              <li class="hover:list-disc hover:ml-3 hover:text-blue-500"><a href="#" class="inline-block transform transition-all duration-500 hover:translate-x-1 hover:text-white text-base">Unwanted Software Policy</a></li>
-              <li class="hover:list-disc hover:ml-3 hover:text-blue-500"><a href="#" class="inline-block transform transition-all duration-500 hover:translate-x-1 hover:text-white text-base">Responsible Supply Chain</a></li>
+              <li class="hover:list-disc hover:ml-3 hover:text-blue-700"><a href="#" class="inline-block transform transition-all duration-500 hover:translate-x-1 hover:text-white text-base">Application Security</a></li>
+              <li class="hover:list-disc hover:ml-3 hover:text-blue-700"><a href="#" class="inline-block transform transition-all duration-500 hover:translate-x-1 hover:text-white text-base">Software Principles</a></li>
+              <li class="hover:list-disc hover:ml-3 hover:text-blue-700"><a href="#" class="inline-block transform transition-all duration-500 hover:translate-x-1 hover:text-white text-base">Unwanted Software Policy</a></li>
+              <li class="hover:list-disc hover:ml-3 hover:text-blue-700"><a href="#" class="inline-block transform transition-all duration-500 hover:translate-x-1 hover:text-white text-base">Responsible Supply Chain</a></li>
             </ul>
           </div>
         </div>
@@ -1045,7 +1114,7 @@
                 href="https://www.facebook.com" 
                 target="_blank" 
                 rel="noopener noreferrer" 
-                class="w-9 h-9 rounded-full bg-gray-700 flex justify-center items-center hover:text-blue-500 hover:bg-indigo-600"
+                class="w-9 h-9 rounded-full bg-gray-700 flex justify-center items-center hover:text-blue-700 hover:bg-indigo-600"
               >
                 <i class="fab fa-facebook-f text-white"></i>
               </a>
@@ -1061,7 +1130,7 @@
                 href="https://www.instagram.com" 
                 target="_blank" 
                 rel="noopener noreferrer" 
-                class="w-9 h-9 rounded-full bg-gray-700 flex justify-center items-center hover:text-blue-500 hover:bg-pink-500"
+                class="w-9 h-9 rounded-full bg-gray-700 flex justify-center items-center hover:text-blue-700 hover:bg-pink-500"
               >
                 <i class="fab fa-instagram text-white"></i>
               </a>
@@ -1069,7 +1138,7 @@
                 href="https://www.youtube.com" 
                 target="_blank" 
                 rel="noopener noreferrer" 
-                class="w-9 h-9 rounded-full bg-gray-700 flex justify-center items-center hover:text-blue-500 hover:bg-red-600"
+                class="w-9 h-9 rounded-full bg-gray-700 flex justify-center items-center hover:text-blue-700 hover:bg-red-600"
               >
                 <i class="fab fa-youtube text-white"></i>
               </a>
@@ -1083,8 +1152,9 @@
 
   <!-- Swiper JS CDN -->
 
-<script src="./script.js"> </script>
-<script src="https://cdn.tailwindcss.com"></script>
+   <script src="script.js"> </script>
+   <script src="https://unpkg.com/flowbite@1.4.1/dist/flowbite.js"></script>
+   <script src="https://cdn.tailwindcss.com"></script>
 
   </body>
 </html>
