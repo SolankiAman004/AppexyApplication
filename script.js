@@ -23,6 +23,37 @@ window.addEventListener('scroll', function () {
     }
   }
 
+  document.querySelectorAll('.nav-link').forEach(link => {
+    link.addEventListener('click', function (e) {
+        e.preventDefault();
+        const targetId = this.getAttribute('href').substring(1);
+        document.getElementById(targetId)?.scrollIntoView({ behavior: 'smooth' });
+    });
+});
+
+
+document.addEventListener('DOMContentLoaded', () => {
+  const content = document.getElementById('slideContent');
+  setTimeout(() => {
+    content.classList.remove('-translate-x-full', 'opacity-0');
+    content.classList.add('translate-x-0', 'opacity-100');
+  }, 200); // Adjust the delay as needed
+});
+
+
+document.addEventListener('DOMContentLoaded', () => {
+  const img = document.getElementById('slideImage');
+  setTimeout(() => {
+    img.classList.remove('translate-x-full', 'opacity-0');
+    img.classList.add('translate-x-0', 'opacity-100');
+  }, 200); // Adjust timing as needed
+});
+
+
+
+
+
+
 
   //  price
 

@@ -3,6 +3,9 @@
 @tailwind utilities;
 
 
+html {
+    scroll-behavior: smooth;
+}
   .dot.active {
     background-color: #3490dc; /* Tailwind's primary blue */
   }
